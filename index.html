@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="image/ai.jpg">
+    <title>The Future of Virtualization</title>
+</head>
+<body class="index-page">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/ai.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="index.html">INTRODUCTION</a></li>
+                    <li><a href="chalim.html">CHALLENGE AND LIMITATIONS</a></li>
+                    <li><a href="future.html">FUTURE TRENDS IN VIRTUALIZATION TECHNOLOGY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>The Future of Virtualization</h1>
+    <p>Unveiling the Future</p>
+        <a href="virtualization.html" class="hero-btn">WHAT IS VIRTUALIZATION?</a>
+        <br><br>
+        <a href="canvirt.html" class="hero-btn">CAN VIRTUALIZATION BE OUR FUTURE?</a>
+        <br><br>
+        <a href="reason.html" class="hero-btn">WHY VIRTUALIZATION TECHNOLOGY BE OUR FUTURE</a>
+        <br><br>
+        
+        
+</div>
+
+    </section>
+
+<section class = "fly">
+    <h1>CURRENT STATE OF VIRTUALIZATION</h1>
+    <p>LETS SEE THE FUTURE WITH VIRTUALIZATION</p>
+
+    <div class="row">
+        <div class="fly-col">
+            <h3>DESKTOP VIRTUALIZATION</h3>
+            <p>Desktop virtualization creates a software-based (or virtual) version of an end user's
+                desktop environment and operating system (OS) that is decoupled from the end user's
+                computing device or client. This enables the user to access his or her desktop from any computing device.</p>
+        </div>
+        <div class="fly-col">
+            <h3>SERVER VIRTUALIZATION</h3>
+            <p> Server virtualization is the process of dividing a physical server into multiple unique
+                and isolated virtual servers by means of a software application.</p>
+        </div>
+        <div class="fly-col">
+            <h3>NETWORK VIRTUALIZATION</h3>
+            <p>Network Virtualization (NV) refers to abstracting network resources that were traditionally
+                delivered in hardware to software. NV can combine multiple physical networks to one virtual,
+                software-based network, or it can divide one physical network into separate, independent virtual networks..
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- ---VIRTUALIZATION--- -->
+
+<section class="virtualization">
+    <h1>VIRTUALIZATION</h1>
+    
+
+    <div class="row">
+        <div class="virtual-col">
+            <img src="image/DK.jpg">
+            <div class="layer">
+                <h3>DESKTOP VIRTUALIZATION</h3>
+            </div>
+        </div>
+        <div class="virtual-col">
+            <img src="image/SERVER.png">
+            <div class="layer">
+                <h3>SERVER VIRTUALIZATION</h3>
+            </div>
+        </div>
+        <div class="virtual-col">
+            <img src="image/NET.png">
+            <div class="layer">
+                <h3>NETWORK VIRTUALIZATION</h3>
+            </div>
+        </div>
+    </div>
+
+
+<!-- javascrip -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

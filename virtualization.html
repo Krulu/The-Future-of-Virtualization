@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="image/ai.jpg">
+    <title>What is Virtualization?</title>
+</head>
+<body class="index-page">
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/ai.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="index.html">INTRODUCTION</a></li>
+                    <li><a href="chalim.html">CHALLENGE AND LIMITATIONS</a></li>
+                    <li><a href="future.html">FUTURE TRENDS IN VIRTUALIZATION TECHNOLOGY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
+
+        <h1>VIRTUALIZATION</h1>
+    </section>
+
+    <!-- -------about us content ------------- -->
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>WHAT IS VIRTUALIZATION?</h1>
+                <p>The process of creating a virtual representation of physical resources that allows multiple
+                    operating systems and applications to run on a single physical machine is known as virtualization.
+                    This technology has progressed to include server virtualization, desktop virtualization,
+                    and network virtualization. Virtualization uses software to create an abstraction layer over computer
+                    hardware that allows the hardware elements of a single computer processors, memory, storage and more
+                    to be divided into multiple virtual computers, commonly called virtual machines (VMs).
+                    Each VM runs its own operating system (OS) and behaves like an independent computer,
+                    even though it is running on just a portion of the actual underlying computer hardware.
+                </p>
+                    <a href="index.html" class="hero-btn red-btn">HOME</a>
+            </div>
+            <div class="about-col">
+                <img src="image/vir.jpg">
+            </div>
+        </div>
+    </section>
+
+<!-- javascrip -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

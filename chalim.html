@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="chalim.css">
+    <link rel="shortcut icon" type="x-icon" href="image/ai.jpg">
+    <title>Challenge and Limitations</title>
+</head>
+<body class="index-page">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/ai.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="index.html">INTRODUCTION</a></li>
+                    <li><a href="chalim.html">CHALLENGE AND LIMITATIONS</a></li>
+                    <li><a href="future.html">FUTURE TRENDS IN VIRTUALIZATION TECHNOLOGY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>What are the Challenges and Limitations of Virtualization</h1>
+    <a href="chasol.html" class="hero-btn">CHALLENGE AND SOLUTIONS</a>
+</div>
+
+    </section>
+
+<section class = "fly">
+    <h1>REASONS</h1>
+
+    <div class="row">
+        <div class="fly-col">
+            <h3>PERFORMANCE CONCERNS</h3>
+            <p>Virtualization may introduce performance overhead,
+                impacting the speed of certain applications. Balancing resources and optimizing
+                configurations are critical to addressing these concerns.</p>
+        </div>
+        <div class="fly-col">
+            <h3>SECURITY CONSIDERATION</h3>
+            <p> Server virtualization is the process of dividing a physical server into multiple unique
+                and isolated virtual servers by means of a software application.</p>
+        </div>
+        <div class="fly-col">
+            <h3>INTEGRATION CHALLENGES</h3>
+            
+            <p>Integrating virtualization into existing IT infrastructures can be complex.
+                Compatibility issues, migration challenges, and the need for specialized skills are common obstacles.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- javascrip -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

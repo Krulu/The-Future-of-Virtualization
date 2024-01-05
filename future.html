@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="future.css">
+    <link rel="shortcut icon" type="x-icon" href="image/ai.jpg">
+    <title>Future Trends</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><img src="image/ai.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+            <ul>
+                <li><a href="index.html">INTRODUCTION</a></li>
+                <li><a href="chalim.html" onclick="showTopic('challenge')">CHALLENGE AND LIMITATIONS</a></li>
+                <li><a href="future.html" onclick="showTopic('future')">FUTURE TRENDS IN VIRTUALIZATION TECHNOLOGY</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+    </nav>
+
+    <section class="header">
+        <h1>FUTURE TRENDS OF VIRTUALIZATION TECHNOLOGY</h1>
+    </section>
+
+    <section class="destination-list" id="destinationList">
+
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const topics = [
+
+                { id: 'EDGE VIRTUALIZATION', name: 'EDGE VIRTUALIZATION', image: 'image/EDG.png', description: 'What is Edge Virtualization?' },
+                { id: 'AI AND MACHINE LEARNING INTEGRATION', name: 'AI AND MACHINE LEARNING INTEGRATION', image: 'image/machine.jpg', description: 'What is Ai and Machine Learning Integration?' },
+                { id: 'QUANTUM COMPUTING', name: 'QUANTUM COMPUTING', image: 'image/quantum.jpg', description: 'What is Quantum Computing?' },
+                { id: 'CONTAINERIZATION AND MICROSERVICES', name: 'CONTAINERIZATION AND MICROSERVICES', image: 'image/micro.png', description: 'What is Containerization and Microservices?' },
+                { id: 'CROSS-PLATFORM VIRTUALIZATION', name: 'CROSS-PLATFORM VIRTUALIZATION', image: 'image/cfp.jpg', description: 'What is Cross-Platform Virtualization?' },
+            ];
+
+            const destinationList = document.getElementById('destinationList');
+
+            topics.forEach(topic => {
+                const card = document.createElement('div');
+                card.classList.add('destination-card');
+
+                const image = document.createElement('img');
+                image.src = topic.image;
+                image.alt = topic.name;
+
+                const info = document.createElement('div');
+                info.classList.add('info');
+
+                const heading = document.createElement('h3');
+                heading.textContent = topic.name;
+
+                const description = document.createElement('p');
+                description.textContent = topic.description;
+
+                info.appendChild(heading);
+                info.appendChild(description);
+
+                card.addEventListener('click', () => showTopicDetails(topic.id));
+
+                card.appendChild(image);
+                card.appendChild(info);
+
+                destinationList.appendChild(card);
+            });
+
+            function showTopicDetails(topicId) {
+                const confirmation = confirm(`Do you want to know more about ${topics.find(topic => topic.id === topicId).name}?`);
+                if (confirmation) {
+                    redirectToTopicPage(topicId);
+                }
+            }
+
+            function redirectToTopicPage(topicId) {
+                // Customize the URL based on your project structure
+                const topicPageURL = `${topicId.toLowerCase()}_details.html`;
+                window.location.href = topicPageURL;
+            }
+        });
+
+        function showTopic(topic) {
+            // Handle click on navigation links to show the topic details
+            showTopicDetails(topic);
+        }
+
+        function hideMenu() {
+            // Implement hideMenu if needed
+        }
+
+        function showMenu() {
+            // Implement showMenu if needed
+        }
+    </script>
+</body>
+</html>

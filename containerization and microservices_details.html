@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="image/ai.jpg">
+    <title>CONTAINERIZATION AND MICROSERVICES</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><img src="image/ai.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+            <ul>
+                <li><a href="index.html">INTRODUCTION</a></li>
+                <li><a href="chalim.html">CHALLENGE AND LIMITATIONS</a></li>
+                <li><a href="future.html">FUTURE TRENDS IN VIRTUALIZATION TECHNOLOGY</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+    </nav>
+
+    <section class="header">
+        <h1>CONTAINERIZATION AND MICROSERVICES</h1>
+    </section>
+
+    <section class="ticket-details">
+        <div class="ticket-image">
+            <img src="image/micro.png">
+        </div>
+    </section>
+
+    <section class="ticket-info">
+        <h2>Containerization and Microservices</h2>
+        <p>Containerization is a lightweight form of virtualization that allows applications
+            and their dependencies to be packaged together in a consistent, isolated unit called a container.
+            Containers encapsulate everything needed to run an application, including code, runtime, libraries, and system tools,
+            ensuring consistent deployment across different environments.</p>
+
+        <p>Microservices architecture promotes service independence,
+            where self-contained units can be developed, deployed, and scaled independently
+            with their own databases and API-based communication. Advantages include scalability,
+            flexibility in technology choices, and fault isolation. When combined with containerization,
+            microservices benefit from standardized packaging, isolation, and scalable deployment. However, challenges
+            involve orchestrating numerous containers, requiring robust tools like Kubernetes, and managing complex network
+            communication, especially in large and distributed systems.</p>
+
+        <p>Containerization and microservices have become
+            fundamental components of modern software development and deployment.
+            Together, they provide the agility, scalability, and flexibility required to meet the demands of
+            today's dynamic and rapidly evolving technological landscape.</p>
+    </section>
+
+
+    <style>
+        
+        
+        .header {
+            background-image: url('image/building.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .destination-card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .destination-card img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            
+        }
+        
+        .destination-card .info {
+            padding: 15px;
+        }
+        
+        .destination-card h3 {
+            margin-top: 0;
+        }
+        
+        .destination-card p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        @media (min-width: 768px) {
+            .destination-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        
+            .destination-card {
+                width: 300px;
+            }
+        }
+        
+        .ticket-image img {
+            display: block;
+            margin: 0 auto;
+            max-width: 50%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        .ticket-image {
+            padding: 20px;
+        }
+        
+        .ticket-info {
+            padding: 20px;
+            text-align: left;
+            margin-top: 20px;
+        }
+        
+        button {
+            background-color: #0a0a0a;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #000000;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+            }
+        
+            nav ul.show {
+                display: flex;
+            }
+        
+            nav li {
+                margin: 0;
+                text-align: center;
+                width: 100%;
+                padding: 10px 0;
+                border-bottom: 1px solid #ffffff;
+            }
+        
+            nav i {
+                display: block;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        .header {
+            background-image: url('image/tech.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #000000;
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .destination-card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        .destination-card .info {
+            padding: 15px;
+        }
+        
+        .destination-card h3 {
+            margin-top: 0;
+        }
+        
+        .destination-card p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        @media (min-width: 768px) {
+            .destination-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        
+            .destination-card {
+                width: 300px;
+            }
+        }
+        
+        
+        /* -- nav -- */
+        
+        nav
+        {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav img
+        {
+            width: 75px;
+        }
+        
+        .nav-links
+        {
+            flex: 1;
+            text-align: right;
+        }
+        
+        .nav-links ul li
+        {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        
+        .nav-links ul li a{
+            color: #000000;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        .nav-links ul li::after
+        {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #030303;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        
+        .nav-links ul li:hover::after
+        {
+            width: 100%;
+        }
+        
+        .text-box
+        {
+            width: 90%;
+            color: #000000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .text-box h1
+        {
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .text-box p
+        {
+            margin: 10px 0 40px;
+            font-size: 15px;
+            color: #000000;
+        }
+        
+        .hero-btn
+        {
+            display: inline-block;
+            text-decoration: none;
+            color: #000000;
+            border: 1px solid #0a0909;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .hero-btn:hover
+        {
+            border: 1px solid #000000;
+            background-color: #000000;
+            color: black;
+        }
+        
+        nav .fa {
+            display: none;
+        }
+        
+        
+        @media(max-width: 700px)
+        {
+            .text-box h1
+            {
+                font-size: 20px;
+            }
+            .nav-links ul li
+            {
+                display: block;
+            }
+            .nav-links
+            {
+                position: absolute;
+                background: black;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                right: -200px;
+                text-align: left;
+                z-index: 2;
+                transition: 1s;
+            }
+            nav .fa
+            {
+                display: block;
+                color: #000000;
+                margin: 10px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            .nav-links ul
+            {
+                padding: 30px;
+            }
+        }
+        
+    </style>
+
+    <script>
+        function hideMenu() {
+    
+        }
+
+        function showMenu() {
+        
+        }
+    </script>
+
+</body>
+</html>
